@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+/home/baskar-zstk406/Trade_show_project/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+874429838.index
