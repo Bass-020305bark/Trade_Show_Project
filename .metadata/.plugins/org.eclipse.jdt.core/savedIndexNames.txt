@@ -17,5 +17,4 @@ INDEX VERSION 1.134+/home/baskar-zstk406/Trade_show_project/.metadata/.plugins/o
 2359322674.index
 3883508318.index
 3485262699.index
-874429838.index
 1089239932.index
