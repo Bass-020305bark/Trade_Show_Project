@@ -1,0 +1,4 @@
+{
+	"insertUser" : "INSERT INTO tablename VALUES( ? , ? , ? )",
+	"checkValidUser"  : "SELECT * FROM where email = ? and password = ?"
+}
