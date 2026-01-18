@@ -24,7 +24,7 @@ export default function EditPage() {
                 <input type="number" id='phone' placeholder='Enter your phone number' required />
             </div>
             <div className="buttonsChoice">
-                <Button backgroundColor={"#1E52BB"}>Save</Button>
+                <Button backgroundColor={"#1E52BB"} type="submit">Save</Button>
                 <Button backgroundColor={"#ebecef"}>Cancel</Button>
             </div>
 
