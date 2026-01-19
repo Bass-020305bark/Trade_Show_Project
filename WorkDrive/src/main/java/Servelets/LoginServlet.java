@@ -37,15 +37,6 @@ public class LoginServlet extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 	
-//	@Override
-//	protected void doOptions(HttpServletRequest request, HttpServletResponse response)
-//	        throws ServletException, IOException {
-//		response.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
-//		response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
-//		response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-//	    response.setStatus(HttpServletResponse.SC_OK);
-//	}
-	
 	@Override
 	protected void doOptions(HttpServletRequest request, HttpServletResponse response)
 	        throws ServletException, IOException {
@@ -102,7 +93,7 @@ public class LoginServlet extends HttpServlet {
             boolean isValidUser = false;
             try {
             	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tradeShow", "root", "@Kr!$hn@1808");
-                PreparedStatement ps = con.prepareStatement("SELECT 1 FROM users WHERE Email = ? AND Password = ?");
+                PreparedStatement ps = con.prepareStatement("SELECT COUNT(*) FROM users WHERE Email = ? AND Password = ?");
                 ps.setString(1, email);
                 ps.setString(2, password);
                 ResultSet rs = ps.executeQuery();
