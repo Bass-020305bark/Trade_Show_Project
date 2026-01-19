@@ -1,12 +1,21 @@
-# Eclipse workspace files
+# ===== Eclipse =====
 .metadata/
 .recommenders/
 
-# Java / build
+# ===== Java / Build =====
 bin/
 target/
+*.class
 
-# OS files
+# ===== IDE =====
+.settings/
+.project
+.classpath
+
+# ===== Logs =====
+*.log
+
+# ===== OS =====
 .DS_Store
 Thumbs.db
-/.metadata/
+
