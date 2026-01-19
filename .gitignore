@@ -1,1 +1,21 @@
-/.metadata/
+# ===== Eclipse =====
+.metadata/
+.recommenders/
+
+# ===== Java / Build =====
+bin/
+target/
+*.class
+
+# ===== IDE =====
+.settings/
+.project
+.classpath
+
+# ===== Logs =====
+*.log
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
