@@ -97,7 +97,6 @@ public class LoginServlet extends HttpServlet {
                 ps.setString(1, email);
                 ps.setString(2, password);
                 ResultSet rs = ps.executeQuery();
-                while (rs.next()) {
                     isValidUser = true;
                 }
             } catch (Exception e) {
